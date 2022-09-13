@@ -1,17 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - main block
- * Description:program that prints the alphabet in lowercase,
- * and then in uppercase
+ * Description: Write a program that prints the alphabet in lowercase
  * Return: 0
  */
 int main(void)
 {
+	char c = 'a';
 
-	int ch;
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
 
-	for (ch = 'a'; ch <= 'z'; ch + 1)
-		putchar(ch);
-
+	putchar('\n');
 	return (0);
 }
