@@ -7,7 +7,7 @@
  * and if it is positive, negative, or zero
  * Return: 0
  */
-int main(void)
+int positive_or_negaive(int n)
 {
 	int n;
 
@@ -19,6 +19,10 @@ int main(void)
 		printf("%i is negative\n", n);
 	else
 		printf("%i is zero\n", n);
+}
 
-	return (0);
+int main(void)
+{
+
+	return (positive_or_negative);
 }
