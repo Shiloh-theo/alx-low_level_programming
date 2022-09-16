@@ -7,30 +7,26 @@
  *
  * Return: no return value as return type of the funtion is void
  */
-
 void print_diagonal(int n)
 {
-	int i, j;
+	int a = 0;
+	int b = 0;
 
-	if (n < 0 || n == 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	} else
-	{
-		i = n;
-
-		while (n > 0)
+		while (a < n)
 		{
-			j = i - (n - 1);
-
-			while (j > 0)
+			while (b < a)
 			{
 				_putchar(' ');
-				j--;
+				b++;
 			}
+			a++;
+			b = 0;
 			_putchar('\\');
 			_putchar('\n');
-			n--;
 		}
 	}
+	else
+	_putchar('\n');
 }
