@@ -1,17 +1,22 @@
 /**
- * _isdigit - checks whether an input is a number or not
+ * _isdigit - function that checks whether an argument is a digit or not
  *
- * @c: the input is to be checked
+ * @ch: argument passed into the _isdigit functio to be checked
  *
- * return: an integer value. 0 or 1
+ * Return: always returns an integer based on the conditions
  */
 
-int _isdigit(int c)
+int _isdigit(int ch)
 {
+	int val;
 
-	if (c >=48 && c <=57)
-		return (1);
+	if (ch >= 48 && ch <= 57)
+	{
+		val = 1;
+	} else
+	{
+		val = 0;
+	}
 
-	else 
-		return (0);
+	return (val);
 }
