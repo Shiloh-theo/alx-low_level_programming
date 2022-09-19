@@ -1,10 +1,11 @@
 /**
- * reset_to_98 - function that takes a pointer to an int as parameter and updaes the value it points to 98.
+ * reset_to_98 - function that takes a pointer to an int n and updates it.
  *
- * return 0
+ * Return: Always 0.
  */
 
 
 void reset_to_98(int *n)
 {
-	
+	int *n = 98;
+}
